@@ -37,6 +37,8 @@ On Windows, you may have to force the system to use MinGW. To do so, create a fi
 compiler=mingw32
 ```
 
+Then, you must have Visual Studio 2017 installed. Also, this [patch](https://bugs.python.org/file40608/patch.diff) can help you to pass the intallation successfully.
+
 If you are not able to create this file for your Python environment, you can instead create a file named `setup.cfg` in
 the root of the repo with the same contents. It is also possible to force the use of MinGW  directly when invoking 
 `pip` by calling:
